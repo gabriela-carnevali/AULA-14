@@ -1,4 +1,46 @@
-p {
+p, h1 {
     font-family: 'Bitcount Grid Single', Helvetica, Arial, sans-serif;
     font-size: 2px;
 }
+
+html {
+font-size: 16px; /* Padrão do navegador */
+}
+h1 { font-size: 3rem; } /* Resultado: 48px (16 * 3) */
+p { font-size: 1rem; } /* Resultado: 16px (16 * 1) */
+.pequeno { font-size: 0.875rem; } /* Resultado: 14px (16 * 0.875) */
+
+
+.links{/* Estilo base para todos os links */
+    color:red;
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.links:visited{
+    color: green;
+}
+.links:hover{
+    color:blueviolet;
+    text-decoration: underline;/* Adiciona sublinhado apenas no hover */
+}
+
+.links:active{
+    color:bisque;
+}
+
+.imagem {
+max-width: 150%;
+height: auto;
+display: block;
+margin-bottom: 5rem; /* Usa rem para espaçamento consistente */
+border-radius: 20px; /* Cantos suavemente arredondados */
+box-shadow: 0 900px 180px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+width: 250px;
+height: 250px;
+}
+.avatar {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+border: 3px solid white;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
